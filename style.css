@@ -1,0 +1,43 @@
+/* 
+    Document   : style
+    Created on : Nov 10, 2012, 3:59:36 PM
+    Author     : xonx
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.outer-table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.passby {
+    background-color: yellow;
+}
+
+.turnpoint {
+    background-color: red;
+}
+
+.inner-table td {
+    border: none;
+}
+
+.u {
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
+.v td {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}

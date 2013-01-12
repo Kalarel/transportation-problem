@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript" src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <div>
+            <table class="outer-table" id="initTable">
+                <tr id="row0">
+                    <td>
+                        <table class="inner-table">
+                            <tr><td></td><td>T<sub>j</sub></td></tr>
+                            <tr><td>A<sub>i</sub></td><td></td></tr>
+                        </table>
+                    </td>
+                    <td><input type="text" size="2" id="T1"/></td>
+                </tr>
+                <tr id="row1">
+                    <td><input type="text" size="2" id="A1"/></td>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <td><input type="text" size="2" id="C1_1"/></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="CK1_1"></td>
+                                <td id="X1_1"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table><br/>
+            <a href="#" onclick="addRow();">
+                Add row
+            </a>&nbsp;
+            <a href="#" onclick="deleteRow();" id="delrow" hidden>
+                Delete row
+            </a>
+            <br/>
+            <a href="#" onclick="addColumn();">
+                Add column
+            </a>&nbsp;
+            <a href="#" onclick="deleteColumn();" id="delcol" hidden>
+                Delete column
+            </a>
+            <input type="hidden" id="rownum" value="1"/>
+            <input type="hidden" id="colnum" value="1"/>
+            <br/>
+            <a href="#" onclick="solve();">Solve it!</a>
+        </div>
+        <div id="solution">
+
+        </div>
+    </body>
+</html>
